@@ -1,0 +1,31 @@
+{
+  "name": "open-in-edge",
+  "title": "Open in Edge",
+  "id": "open-in-edge@wittersworld.com",
+  "description": "Opens selected link or page in a new Edge browser window",
+  "author": "Martin Witters",
+  "license": "MPL 2.0",
+  "version": "1.0.0",
+  "main": "lib/main.js",
+  "preferences": [{
+      "name": "edgePath",
+      "title": "Edge Path",
+      "description": "Path to Edge browser",
+      "type": "file",
+      "value": "C:\\Program Files\\Internet Explorer\\iexplore.exe"    
+    },
+    {
+      "name": "useDomainList",
+      "title": "Use Domain List",
+      "description": "Determines whether the domain list should be used to automatically open specified domains in Edge",
+      "type": "bool",
+      "value": true
+    },
+    {
+      "name": "domainList",
+      "title": "Domain List",
+      "description": "List of domains to automatically open in Edge. Separate domains with the pipe character (|).",
+      "type": "string",
+      "value": "microsoft.com|microsoftstore.com"    
+    }]
+}
